@@ -1,0 +1,12 @@
+{
+  "name": "mui-x-date-range",
+  "version": "1.0.6",
+  "private": false,
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.9",
+    "@mui/material": "^5.15.9",
+    "date-fns": "^3.3.1"
+  }
+}

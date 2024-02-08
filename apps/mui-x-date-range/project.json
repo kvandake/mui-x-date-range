@@ -1,0 +1,40 @@
+{
+  "name": "mui-x-date-range",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/mui-x-date-range/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/rollup:rollup",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/apps/mui-x-date-range",
+        "tsConfig": "apps/mui-x-date-range/tsconfig.lib.json",
+        "project": "apps/mui-x-date-range/package.json",
+        "entryFile": "apps/mui-x-date-range/src/index.ts",
+        "external": [
+          "react",
+          "react-dom",
+          "@emotion/react/jsx-runtime",
+          "@emotion/react",
+          "@emotion/styled",
+          "@mui/icons-material",
+          "@mui/material",
+          "date-fns"
+        ],
+        "rollupConfig": "@nx/react/plugins/bundle-rollup",
+        "compiler": "babel",
+        "assets": [
+          {
+            "glob": "apps/mui-x-date-range/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    }
+  }
+}
